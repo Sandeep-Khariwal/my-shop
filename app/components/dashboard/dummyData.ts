@@ -5,6 +5,8 @@ export interface Product {
   price: number;
   inventory: number;
   sku: string;
+    images?: string[];
+
 }
 
 export interface Category {
