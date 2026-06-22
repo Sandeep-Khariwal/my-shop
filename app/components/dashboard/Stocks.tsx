@@ -87,8 +87,15 @@ const getAdjustmentValue = (productId: string) => {
       </Paper>
 
       {/* Main Stock Allocation Table Grid */}
-      <Paper withBorder radius="md" shadow="xs" p="xs">
-        <Table verticalSpacing="sm" highlightOnHover>
+      {/* <Paper withBorder radius="md" shadow="xs" p="xs">
+        <Table verticalSpacing="sm" highlightOnHover> */}
+        <Paper withBorder radius="md" shadow="xs" p="xs">
+  <div style={{ overflowX: 'auto' }}>
+    <Table
+      verticalSpacing="sm"
+      highlightOnHover
+      style={{ minWidth: '900px' }}
+    >
           <Table.Thead>
             <Table.Tr>
               <Table.Th>SKU Code</Table.Th>
@@ -196,6 +203,7 @@ const getAdjustmentValue = (productId: string) => {
             )}
           </Table.Tbody>
         </Table>
+        </div>
       </Paper>
     </div>
   );
